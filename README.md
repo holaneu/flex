@@ -1,2 +1,4 @@
 # flex
-Flex based HTML / CSS basic content layout for product pages
+HTML layout and CSS styles suitable for simple product / service pages.
+* CSS flex
+* content columns: 1,2,3,4
