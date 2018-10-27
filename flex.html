@@ -1,211 +1,17 @@
-<style>
-  /* # Detail - Prémiové popisky # */
-  .emos-prodDesc {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-border-sizing: border-box;
-    font-family:'Roboto', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 23px;
-    width: 100%;
-    text-align: center;
-    background-color: #fff;
-  }
-  .emos-prodDesc * {
-    box-sizing: border-box;
-  }
-  .emos-row-bg {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    /*border: 1px dotted silver;*/
-  }
-  .emos-row {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    justify-content: center;
-    -webkit-justify-content: center;
-  }
-  .emos-row-headline {
-    text-align: center;
-    margin-top: 30px;
-  }
-  .emos-row-headline h2 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .emos-box-1of1 {
-    width: 100%;
-    min-width: 300px;
-    text-align: center;
-    padding: 10px;
-  }
-  .emos-box-1of2 {
-    width: 50%;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .emos-box-1of3 {
-    width: 33%;
-    min-width: 300px;
-    text-align: center;
-    padding: 10px;
-  }
-  .emos-box-1of4 {
-    width: 25%;
-    min-width: 250px;
-    text-align: center;
-    padding: 10px;
-  }
-  .emos-box-text {
-    padding: 0 15px;
-    text-align: justify;
-  }
-  .emos-box-text h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    margin-top: 24px;
-  }
-  .emos-box-text p {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .emos-box-image img {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-  }
-  .emos-box-1of1 .emos-box-text h3 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .emos-box-1of1 .emos-box-text p {
-    max-width: 500px;
-    margin: auto;
-  }
-  .emos-box-1of1 .emos-box-image img {
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-  }
-  .emos-box-1of2 .emos-box-text h3 {
-    font-size: 21px;
-    margin-top: 10px;
-  }
-  .emos-box-1of2 .emos-box-image img {
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-  }
-  .emos-box-1of3 .emos-box-text h3 {
-    text-align: center;
-    font-size: 18px;
-  }
-  .emos-box-1of3 .emos-box-text {
-    padding: 0 10px;
-  }
-  .emos-box-1of3 .emos-box-text p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .emos-box-1of4 .emos-box-text h3 {
-    text-align: center;
-    font-size: 16px;
-  }
-  .emos-box-1of4 .emos-box-text {
-    padding: 0 5px;
-  }
-  .emos-box-1of4 .emos-box-text p {
-    font-size: 13px;
-    line-height: 18px;
-  }
-  .medium-order-1 {
-    order: 1;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-  }
-  .medium-order-2 {
-    order: 2;
-    -webkit-order: 2;
-    -ms-flex-order: 2;
-  }
-  table.addDescTable {
-    border: 1px solid silver;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  table.addDescTable td {
-    padding: 6px 10px;
-    margin: 0;
-    border: 1px solid silver;
-  }
-  table.addDescTable tbody td:nth-child(1) {
-    font-weight: bold;
-  }
-  table.addDescTable thead {
-    background-color: #e3f6fe;
-  }
-  @media (max-width: 620px) {
-    .emos-row-bg {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-    .emos-box-1of2, .emos-box-1of3 {
-      width: 100%;
-    }
-    .emos-box-1of2 .emos-box-text h3 {
-      text-align: center;
-    }
-    .small-order-1 {
-      order: 1;
-      -webkit-order: 1;
-      -ms-flex-order: 1;
-    }
-    .small-order-2 {
-      order: 2;
-      -webkit-order: 2;
-      -ms-flex-order: 2;
-    }
-  }
-  /* vh vs. emos hack */
-  #emos_detail_wp_ContentAreaBottom .col-xs-12 .emos-row-headline h2 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  #emos_detail_wp_ContentAreaBottom .col-xs-12 .emos-box-text p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
+<link rel="stylesheet" href="./flex.css">
 
 <!-- main container -->
-<div class="emos-prodDesc">
+<div class="vh-prodDesc">
 
   <!-- row - 1 columns-styled content -->
-  <div class="emos-row-bg">
-    <div class="emos-row">
+  <div class="vh-row-bg">
+    <div class="vh-row">
 
-      <div class="emos-box-1of1" style="max-width: none;">
-        <div class="emos-box-image">
+      <div class="vh-box-1of1" style="max-width: none;">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/150422_CON_BB-LOGO_INT_PB-LOGO_COLOR-400.png" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
           <p style="margin: auto; max-width: none;">Při výběru elektroniky se vyplatí hledět především na dobré jméno značky, ať se nespálíte. Powerbanky GP patří k nejspolehlivějším na světě díky špičkové kvalitě součástek, preciznímu zpracování a nadstandardnímu množství bezpečnostních prvků.
             Oproti ostatním výrobcům vám navíc nabízí garanci 100% kapacity &ndash; tak máte záruku, že lithiové baterie v nich obsažené mají přesně takovou kapacitu, jakou slibují.</p>
         </div>
@@ -217,17 +23,17 @@
 
 
   <!-- row - 2 columns-styled content -->
-  <div class="emos-row-bg">
-    <div class="emos-row">
+  <div class="vh-row-bg">
+    <div class="vh-row">
 
-      <div class="emos-box-1of2">
-        <div class="emos-box-image">
+      <div class="vh-box-1of2">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/GP-Batteries_Powerbank_PR10AB_6iPadDualCharging_400.jpg" />
         </div>
       </div>
 
-      <div class="emos-box-1of2">
-        <div class="emos-box-text">          
+      <div class="vh-box-1of2">
+        <div class="vh-box-text">
           <h3>Spolehlivý pomocník</h3>
           <p>Powerbanky z řady R charakterizují 3 slova: <b>spolehlivost</b>, <b>přizpůsobivost a elegance</b>. Ať už si vyberete do dlaně padnoucí model RC02 s jedním výstupem, nebo o něco větší <b>RC10AB s 2 USB porty a kapacitou 10 000 mAh</b>, vybitá baterie
             u mobilu už vás nikdy nerozhodí. Součástí každé této powerbanky je navíc <b>kvalitní napájecí micro USB kabel</b>, který vám zaručí nejrychlejší možnou dobu nabíjení vašeho zařízení.</p>
@@ -240,19 +46,19 @@
 
 
   <!-- row - 2 columns-styled content -->
-  <div class="emos-row-bg">
-    <div class="emos-row">
+  <div class="vh-row-bg">
+    <div class="vh-row">
 
-      <div class="emos-box-1of2 small-order-2 medium-order-1">
-        <div class="emos-box-text">          
+      <div class="vh-box-1of2 small-order-2 medium-order-1">
+        <div class="vh-box-text">
           <h3>Energie do kapsy</h3>
           <p>Každý z nás už v současnosti vlastní tolik elektroniky, že se dá jen těžko uhlídat, aby bylo vždy vše nabité. Pro případ, že váš <b>mobilní telefon</b>, <b>tablet</b>, <b>chytré hodinky</b>, <b>fotoaparát</b>, <b>čtečka knih</b>, <b>mp3 přehrávač</b> nebo <b>soundbox </b>vypoví
             službu zrovna ve chvíli, kdy ho nejvíce potřebujete, se vyplatí nosit s sebou powerbanku. Okamžitě dodá vašemu zařízení čerstvou porci nové energie &ndash; <b>z batohu i z kapsy u kalhot</b>.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of2 small-order-1 medium-order-2">
-        <div class="emos-box-image">
+      <div class="vh-box-1of2 small-order-1 medium-order-2">
+        <div class="vh-box-image">
           <img src="http://shop.emos.cz/getmedia/ce424098-5d0e-4ea6-9c9f-217d13fe69f7/2857_shutterstock_278993138.aspx?width=400&amp;height=266" />
         </div>
       </div>
@@ -263,91 +69,91 @@
 
 
   <!-- row - 3 columns-styled content -->
-  <div class="emos-row-bg">
-  <div class="emos-row-headline">
+  <div class="vh-row-bg">
+  <div class="vh-row-headline">
        <h2>Výhody</h2>
      </div>
-         
-    <div class="emos-row">      
 
-      <div class="emos-box-1of3">
-        <div class="emos-box-image">
+    <div class="vh-row">
+
+      <div class="vh-box-1of3">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-letadlo-200.png" style="height:100px;" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Bezpečná pro leteckou přepravy</h3>
           <p>Všechny powerbanky GP splňují normu UN 38.3 (vydanou OSN), která zaručuje, že daný výrobek obstál v náročných bezpečnostních testech simulujících možné nástrahy při transportu baterií.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of3">
-        <div class="emos-box-image">
+      <div class="vh-box-1of3">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-ready-to-use-200.png" style="height:100px;" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Připravená k okamžitému použití</h3>
           <p>Powerbanku můžete začít používat ihned po vybalení, protože je přednabitá z výroby. Jestliže neležela dlouho na skladě, bude mít dostatek energie, aby nabila vaši elektroniku.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of3">
-        <div class="emos-box-image">
+      <div class="vh-box-1of3">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-high-efficiency.png" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Minimální ztráty energie při jejím přenosu</h3>
           <p>Klíčem k dosažení vysoké efektivity při přenosu energie je kvalitní elektronika. Powerbanky GP nemarní váš čas nadbytečným nabíjením – využijete každou kapičku energie, kterou do nich uložíte.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of3">
-        <div class="emos-box-image">
+      <div class="vh-box-1of3">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-passthrough.png" style="height:100px;" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Simultánní nabíjení powerbanky i vašeho zařízení</h3>
           <p>Funkci passthrough oceníte, jakmile budete potřebovat dobít svou elektroniku a powerbanku zároveň – z jednoho napájecího zdroje. Např. váš mobilní telefon připojíte do powerbanky a tu přímo do zásuvky. Energie se přívodním kabelem dostane do
             obou zařízení, bez přebíjení a nutnosti jakékoli z nich po čase přehodit.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of3">
-        <div class="emos-box-image">
+      <div class="vh-box-1of3">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-smart-function-200.png" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Inteligentní funkce</h3>
           <p>Chytré funkce už nejsou doménou pouze mobilních telefonů, i záložní zdroje energie jsou jimi vybaveny. Tak např. simultánní napájení powerbanky i k ní připojeného zařízení (passthrough), diagnostika připojeného zařízení nebo automatické spuštění/ukončení
             nabíjení. To vše podtrhuje kvalitní elektronika.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of3">
-        <div class="emos-box-image">
+      <div class="vh-box-1of3">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-proc-capacity-guarantee.png" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Garance udávané kapacity powerbanky</h3>
           <p>Společnost GP garantuje, že udávaná kapacita baterií jejich powerbanek je reálná (odpovídá laboratorně měřeným hodnotám při zátěži 1 A). Přesto tuto ji nelze přímo přepočítávat na kapacitu baterie vašeho zařízení, jelikož při přenosu energie
             dochází vždy k určitým ztrátám.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of3">
-        <div class="emos-box-image">
+      <div class="vh-box-1of3">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-auto-on-off-200.png" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Automatické spouštění i ukončování nabíjení</h3>
           <p>Nemusíte mačkat žádné tlačítko. Stačí ji připojit ke zdroji energie, nebo ji propojit s vaší elektronikou, a sama pochopí, co má dělat.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of3">
-        <div class="emos-box-image">
+      <div class="vh-box-1of3">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-cool-power-200.png" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Maximální životnost a bezpečnost</h3>
           <p>Nadměrné teplo je velkým nepřítelem všech baterií. Ale u powerbanek GP máte jistotu, že se extrémně nepřehřívají. Tím je zajištěna jejich dlouhá životnost a vaše bezpečí.</p>
         </div>
@@ -359,44 +165,44 @@
 
 
   <!-- row - 4 columns-styled content -->
-  <div class="emos-row-bg">
-    <div class="emos-row">
+  <div class="vh-row-bg">
+    <div class="vh-row">
 
-      <div class="emos-box-1of4">
-        <div class="emos-box-image">
+      <div class="vh-box-1of4">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-letadlo-200.png" style="height:100px;" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Bezpečná pro leteckou přepravy</h3>
           <p>Všechny powerbanky GP splňují normu UN 38.3 (vydanou OSN), která zaručuje, že daný výrobek obstál v náročných bezpečnostních testech simulujících možné nástrahy při transportu baterií.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of4">
-        <div class="emos-box-image">
+      <div class="vh-box-1of4">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-ready-to-use-200.png" style="height:100px;" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Připravená k okamžitému použití</h3>
           <p>Powerbanku můžete začít používat ihned po vybalení, protože je přednabitá z výroby. Jestliže neležela dlouho na skladě, bude mít dostatek energie, aby nabila vaši elektroniku.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of4">
-        <div class="emos-box-image">
+      <div class="vh-box-1of4">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-high-efficiency.png" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Minimální ztráty energie při jejím přenosu</h3>
           <p>Klíčem k dosažení vysoké efektivity při přenosu energie je kvalitní elektronika. Powerbanky GP nemarní váš čas nadbytečným nabíjením – využijete každou kapičku energie, kterou do nich uložíte.</p>
         </div>
       </div>
 
-      <div class="emos-box-1of4">
-        <div class="emos-box-image">
+      <div class="vh-box-1of4">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/Emos/media/Produkty-zvlastni-info/powerbanky/powerbanka-gp-auto-on-off-200.png" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Automatické spouštění i ukončování nabíjení</h3>
           <p>Nemusíte mačkat žádné tlačítko. Stačí ji připojit ke zdroji energie, nebo ji propojit s vaší elektronikou, a sama pochopí, co má dělat.</p>
         </div>
@@ -408,14 +214,14 @@
 
 
   <!-- row - 1 column-styled content -->
-  <div class="emos-row-bg">
-    <div class="emos-row">
+  <div class="vh-row-bg">
+    <div class="vh-row">
 
-      <div class="emos-box-1of1" style="max-width: none;">
-        <div class="emos-box-image">
+      <div class="vh-box-1of1" style="max-width: none;">
+        <div class="vh-box-image">
           <img src="https://shop.emos.cz/getmedia/f2352ddf-0f21-48e0-8837-19925cdc1511/powerbanky-gp-krizove-vyuziti.aspx?width=600&height=401" style="width: 900px;" />
         </div>
-        <div class="emos-box-text">
+        <div class="vh-box-text">
            <h3>Nestresujte se</h3>
           <p style="max-width: 800px;">Nezáleží na tom, jestli rádi sportujete, cestujete, točíte Instastories nebo lovíte pokémony. Problém s vybitou baterií, a žádnou zásuvkou v blízkosti, řeší čas od času každý z nás.</p>
           <p style="max-width: 800px;">Powerbanka funguje jako taková přenosná zásuvka, kterou si vezmete kamkoli potřebujete. Je jedno, jestli se vydáte za hranici státu, města nebo jen překročíte práh svého domu. Až na vás baterie jakéhokoli zařízení výstražně zabliká, zděšený
@@ -434,9 +240,9 @@
   <!-- end row - 1 column-styled content -->
 
   <!-- row - table -->
-  <div class="emos-row-bg">
-    <div class="emos-row">
-    
+  <div class="vh-row-bg">
+    <div class="vh-row">
+
     <table cellspacing="0" class="addDescTable">
       <thead>
         <tr>
@@ -498,9 +304,9 @@
         </tr>
       </tbody>
     </table>
-  
+
     <div style="clear:both;">&nbsp;</div>
-  
+
     <table cellspacing="0" class="addDescTable">
       <thead>
         <tr>
@@ -547,9 +353,9 @@
         </tr>
       </tbody>
     </table>
-  
+
     <div style="clear:both;">&nbsp;</div>
-    
+
     </div>
   </div>
   <!-- end row - table -->
