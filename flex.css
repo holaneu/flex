@@ -162,7 +162,7 @@ table.addDescTable thead {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .vh-box-1of2, .vh-box-1of3 {
+  .vh-box-1of2, .vh-box-1of3, .vh-box-1of4 {
     width: 100%;
   }
   .vh-box-1of2 .vh-box-text h3 {
