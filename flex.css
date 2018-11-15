@@ -14,6 +14,8 @@
 }
 .vh-prodDesc * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-border-sizing: border-box;
 }
 .vh-row-bg {
   width: 100%;
@@ -85,6 +87,8 @@
   max-width: 100%;
   height: auto;
   margin: auto;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
 }
 .vh-box-1of1 .vh-box-text h3 {
   text-align: center;
@@ -92,8 +96,7 @@
   font-weight: 600;
 }
 .vh-box-1of1 .vh-box-text p {
-  max-width: 500px;
-  margin: auto;
+  margin: 15px auto 5px auto;
 }
 .vh-box-1of1 .vh-box-image img {
   border-radius: 7px;
@@ -103,10 +106,7 @@
   font-size: 21px;
   margin-top: 10px;
 }
-.vh-box-1of2 .vh-box-image img {
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
+
 .vh-box-1of3 .vh-box-text h3 {
   text-align: center;
   font-size: 18px;
